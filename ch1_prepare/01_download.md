@@ -10,14 +10,11 @@
 
 手动添加一个试试：
 
-{% page-ref page="basic\_setting/pt_style" %}
-
 提示：
 
 {% hint style="info" %}
 注意：在这里可以添加提示，不知是什么结构。
 {% endhint %}
-
 
 {% hint style="warning" %}
 警告长这样儿
@@ -25,14 +22,29 @@
 
 ……好吧还挺麻烦的。
 
-`{% page-ref page="" %}`是引用文章页，目录的话就直接引用文件夹，会识别 README 的；非目录我估计是文件夹/文件名，试试看。
 
-`{% hint style="info/warning/..." %}` 是对应的提示，用这个其实，然后要用 `{% endhint %}`结束。
-——挺麻烦的哈？
+
+
+
+{% page-ref page="basic\_setting/cubase\_style.md" %}
+
+
+
+\`
+
+{% page-ref page="01\_download.md" %}
+
+\`是引用文章页，目录的话就直接引用文件夹，会识别 README 的；非目录我估计是文件夹/文件名，试试看。
+
+\`
+
+{% hint style="info" %}
+`是对应的提示，用这个其实，然后要用`
+{% endhint %}
+
+\`结束。 ——挺麻烦的哈？
 
 看看本地的 gitbook 能不能识别这两种表示。
 
 喵的不行，而且还会阻碍 serve 的生成，也就是没办法和 Gitbook-CLI （本地版）兼容。
-
-
 
