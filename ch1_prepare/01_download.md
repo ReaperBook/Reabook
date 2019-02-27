@@ -10,6 +10,9 @@
 
 手动添加一个试试：
 
+{% page-ref page="basic\_setting/cubase\_style.md" %}
+
+
 提示：
 
 {% hint style="info" %}
@@ -23,28 +26,23 @@
 ……好吧还挺麻烦的。
 
 
+{`% page-ref page="01\_download.md" %`} 是引用文章页，目录的话就直接引用文件夹，会识别 README 的；非目录我估计是文件夹/文件名，试试看。
 
+{`% hint style="info" %`}是对应的提示，用这个其实，然后要用{`% endhint %`}结束。 ——挺麻烦的哈？
 
+---
 
-{% page-ref page="basic\_setting/cubase\_style.md" %}
-
-
-
-\`
-
-{% page-ref page="01\_download.md" %}
-
-\`是引用文章页，目录的话就直接引用文件夹，会识别 README 的；非目录我估计是文件夹/文件名，试试看。
-
-\`
-
-{% hint style="info" %}
-`是对应的提示，用这个其实，然后要用`
-{% endhint %}
-
-\`结束。 ——挺麻烦的哈？
 
 看看本地的 gitbook 能不能识别这两种表示。
 
 喵的不行，而且还会阻碍 serve 的生成，也就是没办法和 Gitbook-CLI （本地版）兼容。
+
+---
+
+所以目前看来，应该是：
+
+1. 先在本地（REAPER book 仓库）写好 md 文件；
+2. 然后把 clean 后的内容——图片是否要预上传位置，可能可以直接存在对应文件夹里，然后传到 Github 的仓库空间；
+3. 在 Gitbook 网站进行二次调整，例如增加 hint 符号、引用文章页面等等。
+
 
