@@ -117,9 +117,9 @@ $$
 
 
 
-![自己尝试添加一张图片](/assets/pages.png)
+![自己尝试添加一张图片](./assets/pages.png)
 
-[自己尝试引用一个页面](/02_install.md)
+[自己尝试引用一个页面](./02_install.md)
 
 
 
